@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 align="center">Application Form</h1>
+    <fieldset>
+        <legend>
+            <b>A:General Information</b>
+        </legend>
+
+        <table width="100%" cellpadding="8">
+            
+            <tr>
+                <td width="50">
+                    <label for="fullname">
+                        <b>Proposed Insured's Full Name</b>
+                        <font color="red">*</font>
+                    </label>
+                    <br>
+                    <input type="text" id="fullname" name="fullname" style="width:80%;height: 38px;">
+                </td>
+            
+                <td width="50%">
+                    <label for="birthdate">
+                        <b>Birth Date</b>
+                        <font color="red">*</font>
+                    </label>
+                    <br>
+                    <input type="date" id="birthdate" name="birthdate" style="width:80%;height: 38px;border:1px solid black;padding:5px;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                Gender:
+                <input type="radio" id="genderMale" name="gender" value="Male">
+                <label for="genderMale">Male</label>
+                <input type="radio" id="genderFemale" name="gender" value="Female">
+                <label for="genderFemale">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <label><b>Address</b><font color="red">*</font></label><br>
+                <textarea id="address" name="address" rows="4" style="width:100%;resize:vertical;" required></textarea>
+                </td>
+            </tr>
+
+                <tr>
+                <td width="50">
+                    <label for="number">
+                        <b>Phone Number</b>
+                        <font color="red">*</font>
+                    </label>
+                    <br>
+                    <input type="nymber" id="number" name="numer" style="width:80%;height: 38px;"
+                    placeholder="  +92 300 1234567">
+                </td>
+
+                <td width="50">
+                <label for="email">
+                        <b>Email Address</b>
+                        <font color="red">*</font><br>
+                    </label>
+                    <input type="text" id="email" name="email" style="width:80%;height: 38px;"
+                    placeholder="  name@example.com">
+                </td>
+            </tr>
+            <tr>
+
+                <td width="50">
+                    <label for="cnic">
+                        <b>ID/CNIC Number</b>
+                        <font color="red">*</font>
+                    </label>
+                    <br>
+                    <input type="text" id="cnic" name="cnic" style="width:80%;height: 38px;"
+                    placeholder="  42101-1234567-1">
+                </td>
+
+                <td width="50">
+                    <label for="Security">
+                        <b>Social Security/Reference Number</b>
+                        <font color="red">*</font>
+                    </label>
+                    <br>
+                    <input type="text" id="Security" name="Security" style="width:80%;height: 38px;">
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <label for="marital"><b>Marital Status</b><span style="color:red;">*</span></label><br>
+                    <select id="marital" name="marital" style="width:80%;height: 38px;">
+                    <option value="">Select status</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                </select>
+                </td>
+
+                <td width="50">
+                    <label for="occupation">
+                        <b>Occupation</b>
+                        <font color="red">*</font>
+                    </label>
+                    <br>
+                    <input type="text" id="occupation" name="occupation" style="width:80%;height: 38px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Are you retired?
+                    <input type="radio" id="retire" name="retire" value="retire">
+                <label for="retire">Yes</label>
+                <input type="radio" id="retire" name="retire" value="retire">
+                <label for="retire">No</label>
+                </td>
+            </tr>
+        </table>
+
+    </fieldset>
+        <legend>
+            <b>B:Type of Health Coverage</b>
+        </legend><br>
+    <tr>
+        <td>
+            <fieldset>
+            <legend><b>Employee Coverage</b></legend><br>
+            <input type="radio" name="emp_cov" value="Yes"> Yes
+            <input type="radio" name="emp_cov" value="No"> No
+            <br><br>
+            <label><b>Employee Plan Choice</b></label>
+            <select style="width: 100%; height: 35px;"><br>
+                <option>Select plan</option>
+                <option>PPO Plan</option>
+                <option>HMO Plan</option>
+            </select>
+            </fieldset>
+
+        <fieldset>
+            <legend><b>Spouse Coverage</b></legend><br>
+            <input type="radio" name="spouse_cov" value="Yes"> Yes
+            <input type="radio" name="spouse_cov" value="No"> No
+            <br><br>
+            <label><b>Spouse Plan Choice</b></label>
+            <select style="width: 100%; height: 35px;">
+                <option>Select plan</option>
+                <option>PPO Plan</option>
+                <option>HMO Plan</option>
+            </select>
+        </fieldset>
+        </td>
+    </tr>
+        <br>
+        <fieldset>
+            <legend><b>Children Coverage</b></legend><br>
+            <input type="radio" name="child_cov" value="Yes"> Yes
+            <input type="radio" name="child_cov" value="No"> No
+            <br><br>
+            <label><b>Children Plan Choice</b></label><br>
+            <select style="width: 100%; height: 35px;">
+                <option>Select plan</option>
+                <option>PPO Plan</option>
+                <option>HMO Plan</option>
+            </select>
+        </fieldset>
+    <br>
+
+
+    <fieldset>
+        <legend class="blue-box"><b>C. Spouse / Children Information</b></legend>
+        <table width="100%" cellpadding="8">
+            <tr>
+                
+                <td width="50%">
+                <label><b>Dependent Name</b></label><br>
+                <input type="text" name="dependent" style="width: 100%; height: 38px;">
+            </td>
+                
+                 <td width="50%">
+                <label><b>ID / SSN</b></label><br>
+                <input type="text" name="ssn" style="width: 100%; height: 38px;">
+            </td>
+            </tr>
+        
+                 <tr>
+               <td width="50%">
+                    <label><b>Relationship</b></label><br>
+                    <select id="relation" name="relation" style="width:100%;height: 38px;">
+                    <option value="">Select Relationship</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                </select>
+                </td>
+
+                <td width="50%">
+                    <label for="birthdate">
+                        <b>Birth Date</b>
+                    </label>
+                    <br>
+                    <input type="date" id="birthdate" name="birthdate" style="width:80%;height: 38px;border:1px solid black;padding:5px;">
+                </td>
+            </tr>
+
+            <tr>
+
+            <td width="50%">
+                <label><b>Age</b></label><br>
+                <input type="text" name="age" style="width: 100%; height: 38px;">
+            </td>
+
+            <td>
+                    <label><b>Gender</b></label><br>
+                    <select style="width: 100%; height: 38px;">
+                        <option>Select gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend class="blue-box">D. Policy Information</legend>
+        <table width="100%" cellpadding="8">
+            <tr>
+                <td width="50%">
+                <label><b>Units</b></label><br>
+                <input type="text" name="age" style="width: 100%; height: 38px;">
+            </td>
+
+            <td width="50%">
+                <label><b>Annual Premium</b></label><br>
+                <input type="text" name="annual_premium" style="width: 100%; height: 38px;">
+            </td>
+            
+            </tr>
+            <tr>
+            <td width="50%">
+                    <label><b>Payment Mode</b></label><br>
+                    <select id="mode" name="mode" style="width:203%;height: 38px;">
+                    <option value="">Select payment mode</option>
+                    <option value="Single">Monthly</option>
+                    <option value="Married">Yearly</option>
+                </select>
+                </td>
+
+            </tr>
+            <tr>
+
+                <td width="50%">
+                <label><b>Cash With Application</b></label><br>
+                <input type="text" name="cash" style="width: 100%; height: 38px;">
+            </td>
+        
+            <td width="50%">
+                    <label><b>Planned Monthly Premium</b></label><br>
+                    <input type="text" name="monthly_premium" style="width: 100%; height: 38px;">
+                </td>
+                
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+
+    
+    <fieldset>
+        <legend class="blue-box">E. Required Document</legend>
+        <p>Please attach your supporting document before submitting the application.</p>
+        <label><b>Attach Document</b> <font color="red">*</font></label><br><br>
+        <fieldset>
+        <input type="file" name="document">
+        </fieldset>
+        <p><small>Accepted formats: PDF, JPG, JPEG and PNG</small></p>
+    </fieldset>
+    <br>
+
+    <!-- F. Declaration -->
+    <fieldset>
+        <legend class="blue-box">F. Declaration</legend>
+        <input type="checkbox" name="declare"> I confirm that the information provided in this application is complete and accurate.
+        <br><br>
+        <table width="100%" cellpadding="8">
+            <tr>
+                <td>
+                    <label><b>Applicant Full Name / Signature</b> <font color="red">*</font></label><br>
+                    <input type="text" name="signature" style="width: 100%; height: 38px;">
+                </td>
+                <td>
+                    <label><b>Application Date</b> <font color="red">*</font></label><br>
+                    <input type="date" name="date" style="width: 100%; height: 38px;">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <p align="right">
+        <input type="reset" value="Clear Form">
+        <input type="submit" value="Submit Application">
+    </p>
+
+</body>
+</html>
